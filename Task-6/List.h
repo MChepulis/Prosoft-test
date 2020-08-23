@@ -13,7 +13,7 @@ struct Node_t* tail;
 size_t size; 
 } List_t; 
 
-// Получть указатель на данные в узле 
+// Получить указатель на данные в узле 
 // Возвращает указатель на данные или NULL в случае ошибки 
 void* GetData(const Node_t *const node); 
 
@@ -29,7 +29,7 @@ Node_t* GetNext(const Node_t *const node);
 // Возвращает указатель на предыдущий элемент списка или NULL в случае ошибки 
 Node_t* GetPrev(const Node_t *const node); 
 
-// Создание нового пустого списка 
+// Создать новый пустой список
 // Возвращает указатель на созданный список или NULL в случае ошибки 
 List_t* CreateList(); 
 
@@ -53,10 +53,10 @@ void PushBack(List_t *const list, const void *const data, const size_t sizeofDat
 // Создать и вставить новый элемент после указанного 
 void PushAfter(List_t *const list, Node_t *const node, const void *const data, const size_t sizeofData); 
 
-// Создать и вставить новый элемент перед указанного 
+// Создать и вставить новый элемент перед указанным 
 void PushBefore(List_t *const list, Node_t *const node, const void *const data, const size_t sizeofData); 
 
-// Удалить начальный узел спска 
+// Удалить начальный узел списка 
 void PopFront(List_t *const list); 
 
 // Удалить последний узел списка 

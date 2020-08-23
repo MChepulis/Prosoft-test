@@ -6,7 +6,7 @@
 // Возвращает указатель на новый узел или NULL в случае ошибки 
 Node_t* CreateNode(const void *const data, const size_t sizeofData); 
 
-// Освобождить память для узла 
+// Освободить выделенную под узел память 
 void FreeNode(Node_t **nodePtr); 
 
 
